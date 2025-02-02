@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Simulations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100vh;
+        }
+        .simulation {
+            margin: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #222;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .simulation:hover {
+            transform: scale(1.05);
+        }
+        .simulation img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .simulation button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #00bcd4;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .simulation button:hover {
+            background-color: #008ba3;
+        }
+    </style>
+</head>
+<body>
+    <span><img src="logo.png"></span>
+    <div class="container">
+        <div class="simulation" onclick="location.href='my-solar-system_en.html'">
+            <img src="my-solar-system-600.png" alt="My Solar System Preview">
+            <h2>My Solar System</h2>
+            <button>Start Simulation</button>
+        </div>
+        <div class="simulation" onclick="location.href='gravity-and-orbits_en.html'">
+            <img src="gravity-and-orbits-600.png" alt="Gravity and Orbits Preview">
+            <h2>Gravity and Orbits</h2>
+            <button>Start Simulation</button>
+        </div>
+    </div>
+</body>
+</html>
